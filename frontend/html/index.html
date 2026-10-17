@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uptime Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Uptime Monitor</h1>
+    <p class="subtitle">Проверка доступности веб-сайтов</p>
+  </header>
+
+  <main>
+    <form id="add-form" class="card add-form">
+      <input type="text" id="name" placeholder="Название (напр. Google)" required>
+      <input type="text" id="url" placeholder="https://example.com" required>
+      <input type="number" id="interval" placeholder="Интервал, сек" min="5" value="60">
+      <button type="submit">Добавить</button>
+    </form>
+
+    <section id="targets" class="grid"></section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>

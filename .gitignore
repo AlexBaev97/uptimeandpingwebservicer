@@ -1,0 +1,10 @@
+# secrets — не пушить
+.env
+
+# зависимости / артефакты
+node_modules/
+*.log
+npm-debug.log*
+
+# система
+.DS_Store
